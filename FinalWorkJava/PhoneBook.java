@@ -25,7 +25,6 @@ public class PhoneBook {
                 System.out.println("Укажите номер телефона: ");
                 String numPhone = scanner.next();
 
-                // Проверяем, есть ли уже контакт с таким именем
                 List<String> phones = phoneBook.getOrDefault(contName, new ArrayList<>());
                 phones.add(numPhone);
                 phoneBook.put(contName, phones);
